@@ -1,0 +1,52 @@
+.dialogs {
+  display: flex;
+}
+
+.dialogsItems {
+  border-right: 1px solid black;
+  padding: 10px;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.dialog {
+  margin: 8% 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+.dialog:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.dialogsItems a {
+  text-decoration: none;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.dialogsItems .active {
+  color: gold;
+  text-decoration: none;
+}
+
+.messages {
+  padding: 10px;
+  color: black;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.message {
+  margin: 8% 0;
+  font-size: 25px;
+  display: flex;
+}

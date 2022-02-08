@@ -1,0 +1,27 @@
+.postsBlock {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.posts {
+  margin-top: 10px;
+  text-align: start;
+  margin-left: 10%;
+}
+.input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 2%;
+  width: 500px;
+}
+.btn {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: aquamarine;
+  border: none;
+  padding: 1% 3%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
