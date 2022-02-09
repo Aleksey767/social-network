@@ -11,3 +11,7 @@
 .users {
   text-align: center;
 }
+span{
+  margin-left:1%;
+  cursor: pointer;
+}
