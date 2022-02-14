@@ -16,6 +16,9 @@
   padding: 2%;
   width: 500px;
 }
+.input.error input{
+  border:1px solid red;
+}
 .btn {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -25,3 +28,4 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
