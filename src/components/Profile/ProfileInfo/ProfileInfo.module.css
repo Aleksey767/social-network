@@ -1,38 +1,48 @@
 .descriptionBlock {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
 }
+
 .avatar {
-  width: 250px;
-  height: 250px;
-  border-radius: 150px; /* Радиус скругления */
-  border: 0px solid rgb(24, 29, 30); /* Параметры рамки */
-  box-shadow: 0 0 20px black; /* Параметры тени */
+    width: 250px;
+    height: 250px;
+    border-radius: 150px; /* Радиус скругления */
+    border: 0px solid rgb(24, 29, 30); /* Параметры рамки */
+    box-shadow: 0 0 20px black; /* Параметры тени */
 }
+
 .name {
-  font-size: 25px;
-  width: 300px;
-  margin: 2% 0;
-  text-transform: uppercase;
+    font-size: 25px;
+    width: 300px;
+    margin: 2% 0;
+    text-transform: uppercase;
 }
+
 .image {
-  margin: 2%;
-  width: 850px;
-  height: auto;
+    margin: 2%;
+    width: 850px;
+    height: auto;
 }
+
 .profileInfo {
-  text-align: center;
+    text-align: center;
 }
+
 .info {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  margin: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 3%;
 }
+
 span {
-  font-size: 20px;
+    font-size: 20px;
+}
+
+.status {
+    margin: 20px;
 }
