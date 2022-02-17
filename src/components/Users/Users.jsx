@@ -6,7 +6,7 @@ import Paginator from './Paginator';
 
 let Users = ({currentPage,onPageChanged,totalUsersCount,followingInProgress,pageSize,...props}) => {
     return <div className={s.users}>
-        <Paginator currentPage={currentPage} onPageChanged={onPageChanged} totalUsersCount={totalUsersCount} pageSize={pageSize}/>
+        <Paginator currentPage={currentPage} onPageChanged={onPageChanged} totalItemsCount={totalUsersCount} pageSize={pageSize}/>
         {
             props.users.map(u => <div key={u.id}>
                 <span>
