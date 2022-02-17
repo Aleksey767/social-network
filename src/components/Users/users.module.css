@@ -11,7 +11,12 @@
 .users {
   text-align: center;
 }
-span{
-  margin-left:1%;
+span {
+  margin-left: 1%;
   cursor: pointer;
+}
+.status {
+  margin: 5px 0;
+  text-shadow: 5px black;
+  font-size: 18px;
 }
