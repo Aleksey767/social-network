@@ -4,7 +4,9 @@ import Post from './Post/Post';
 import {Field, reduxForm} from "redux-form";
 import {maxLengthCreator, required} from "../../../utils/validators/validators";
 import {TextArea} from "../../common/FormsControls/FormsControls";
+
 let maxLength10 = maxLengthCreator(10);
+
 
 const AddNewPostsForm = (props) => {
     return (
