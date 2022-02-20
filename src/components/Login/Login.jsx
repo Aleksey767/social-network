@@ -15,10 +15,13 @@ const LoginForm = ({handleSubmit,error}) => {
             <form onSubmit={handleSubmit}>
                 <div><Field placeholder={"Login"} name={'email'} component={Input}
                             validate={[required]} type={"email"}/></div>
+
                 <div><Field placeholder={"Password"} component={Input} name={'password'}
                             validate={[required]} type={"password"}/></div>
+
                 <div className="checkbox"><Field component={Input} id={'rememberMe'}
                             type={"checkbox"}/>remember me</div>
+
                 {error && <div className="formSummaryError">
                     {error}</div>}
                 <div>

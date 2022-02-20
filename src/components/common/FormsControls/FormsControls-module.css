@@ -7,6 +7,7 @@
 }
 .formSummaryError{
     color:red;
+    font-size: 25px;
 }
 .checkbox{
     display: flex;
