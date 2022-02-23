@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import {Route, withRouter} from "react-router-dom";
+import {Route, Switch, withRouter} from "react-router-dom";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginPage from "./components/Login/Login";
@@ -29,6 +29,9 @@ class App extends React.Component {
                 <HeaderContainer/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
+                    <Switch>
+                        <Route exact path='/'
+                               render={withSuspense(ProfileContainer)}/>
                     <Route path='/dialogs'
                            render={withSuspense(DialogsContainer)}/>
 
@@ -40,6 +43,9 @@ class App extends React.Component {
 
                     <Route path='/login'
                            render={() => <LoginPage/>}/>
+                        <Route path='*'
+                               render={() => <b>404</b>}/>
+                    </Switch>
                 </div>
             </div>
         )

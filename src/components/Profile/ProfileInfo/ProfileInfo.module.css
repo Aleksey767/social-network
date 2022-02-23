@@ -1,45 +1,171 @@
-.descriptionBlock {
-  margin: 20px;
-  display: flex;
-  align-items: center;
+.profileInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.descBlock{
+    width: 60%;
+}
+.infoBlock{
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 10px;
+    border: 0 solid rgb(24, 29, 30);
+    box-shadow: 0 0 2px black;
+    padding: 5px;
+}
+.nameStatusBlock{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0 solid rgb(24, 29, 30);
+    box-shadow: 0 0 2px black;
+}
+.topBorder{
+    border-top:1px solid gainsboro;
+
+}
+.imageBlock {
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 20%;
+    border-radius: 10px; /* Радиус скругления */
+    border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
+    box-shadow: 0 0 2px black; /* Параметры тени */
+}
+.subTitle{
+    font-size: 20px;
+    margin-right: 4%;
+    float: left;
+    width: 30%;
+}
+.subTitle:first-letter{
+    text-transform: uppercase;
+}
+.infoItem{
+    margin:2% 0;
+    overflow: hidden;
+    padding: 0 5%;
+}
+.infoText{
+    font-size: 20px;
+    margin-left: 20%;
+}
+.downloadImage {
+    margin-bottom: 6%;
+    padding: 0;
 }
 
 .avatar {
-  width: 250px;
-  height: 250px;
-  border-radius: 150px; /* Радиус скругления */
-  border: 0px solid rgb(24, 29, 30); /* Параметры рамки */
-  box-shadow: 0 0 20px black; /* Параметры тени */
+    margin: 8%;
+    width: 250px;
+    height: 250px;
+    border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
+    box-shadow: 0 0 1px black; /* Параметры тени */
 }
 
 .name {
-  font-size: 25px;
-  width: 300px;
-  margin: 2% 0;
-  text-transform: uppercase;
+    position: relative;
+    top:15px;
+    font-size: 25px;
+    margin: 20px;
+    font-weight: bold;
 }
 
 .image {
-  margin: 2%;
-  width: 850px;
-  height: auto;
+    margin: 2%;
+    width: 850px;
+    height: auto;
 }
 
 .info {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  margin: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 3%;
 }
 
 span {
-  font-size: 20px;
+    font-size: 20px;
 }
 
+.btn{
+    margin:2% 35%;
+    background-color: #4b8ffd;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    border-radius: 10px; /* Радиус скругления */
+    border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
+    box-shadow: 0 0 2px black; /* Параметры тени */
+    cursor: pointer;
+}
+.editWrapper{
+    border-top:1px solid gainsboro;
+}
+.editInfo{
+    margin-left: 25%;
+    width: 300px;
+}
+.btn:hover {
+    background: #7abbfa;
+}
 .status {
-  margin: 20px;
-  font-size: 30px;
-  font-style: italic;
+    margin: 20px;
+    font-size: 20px;
+    width: 90%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.status:hover{
+    background-color: #ebf0f5;
+    border-radius: 10px;
+}
+
+.fileUpload input[type="file"] {
+
+    display: none;
+
+}
+
+.fileUpload {
+    width: 200px;
+    height: 40px;
+    background: #4b8ffd;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.fileUpload:hover {
+
+    background: #7abbfa;
+
+}
+
+.fileUpload label {
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.fileUpload span {
+
+    line-height: 40px;
+
 }

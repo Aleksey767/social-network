@@ -12,15 +12,16 @@ const LoginForm = ({handleSubmit,error,captchaUrl}) => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
+
                 <div><Field placeholder={"Login"} name={'email'} component={Input}
                             validate={[required]} type={"email"}/></div>
 
                 <div><Field placeholder={"Password"} component={Input} name={'password'}
                             validate={[required]} type={"password"}/></div>
 
-                <div className="checkbox"><Field component={Input} id={'rememberMe'}
-                            type={"checkbox"}/>remember me</div>
+                <div className="checkbox"><div><Field  component={Input} name={'lookingForAJobs'}
+                                                       type={"checkbox"}/></div><span>Remember Me</span></div>
 
                 {captchaUrl && <img src={captchaUrl}/>}
                 {captchaUrl && <Field placeholder={"Symbols from image"} component={Input} name={'captcha'}
@@ -47,7 +48,7 @@ const Login = (props) => {
         return <Redirect to={"/profile"}/>
     }
     return (
-        <div>
+        <div className="wrapper">
             <h1>Login</h1>
             <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl}/>
         </div>
