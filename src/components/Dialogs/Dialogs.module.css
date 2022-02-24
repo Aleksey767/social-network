@@ -24,8 +24,6 @@
 .dialogsItems a {
   text-decoration: none;
   color: black;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   font-size: 25px;
 }
 .dialogsItems .active {
@@ -41,12 +39,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 .message {
   margin: 8% 0;
   font-size: 25px;
   display: flex;
+}
+.dialogsInput input{
+  margin: 20px;
+  height: 50px;
+  width: 400px;
+  font-family: Montserrat,serif;
+  text-align: center;
+}
+.dialogsInput{
+  text-align: center;
+}
+.btn{
+  margin:2% 35%;
+  background-color: #4b8ffd;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px;
+  border-radius: 10px; /* Радиус скругления */
+  border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
+  box-shadow: 0 0 2px black; /* Параметры тени */
+  cursor: pointer;
+}
+.btn:hover {
+  background: #7abbfa;
 }

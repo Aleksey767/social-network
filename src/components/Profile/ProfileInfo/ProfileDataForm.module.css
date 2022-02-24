@@ -23,11 +23,6 @@ input[type="text"] {
 .profileForm{
     padding-left: 30px;
 }
-.profileCheckbox input{
-    width: 10px;
-    position: relative;
-    display: flex;
-}
 .contactTitle{
     margin-top: 10px;
 }

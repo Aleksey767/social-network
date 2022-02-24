@@ -17,10 +17,10 @@ class ProfileContainer extends React.Component {
         }
         this.props.getUserProfile(userId);
         this.props.getStatus(userId);
+        console.log('xui')
     }
 
     componentDidMount() {
-
         this.refreshProfile();
     }
 
@@ -33,11 +33,13 @@ class ProfileContainer extends React.Component {
     render() {
         return (
             <Profile {...this.props}
-                    isOwner={!this.props.match.params.userId}
+                     isOwner={!this.props.match.params.userId}
                      profile={this.props.profile}
                      status={this.props.status}
                      updateStatus={this.props.updateStatus}
                      savePhoto={this.props.savePhoto}/>
+
+
         )
     }
 }

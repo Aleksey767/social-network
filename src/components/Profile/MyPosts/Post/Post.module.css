@@ -1,8 +1,7 @@
 .item {
   color: rgb(0, 0, 0);
-  margin: 2% 0;
-  padding: 2%;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  padding: 5%;
+  border-top: 1px solid gainsboro;
 }
 
 .item img {
@@ -17,4 +16,8 @@
 }
 .message img {
   margin-right: 30px;
+}
+.likeCount{
+  display: inline-block;
+  margin-top: 1.5%;
 }

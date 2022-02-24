@@ -33,7 +33,7 @@ const ProfileInfo = ({profile, savePhoto, isOwner, status, saveProfile, updateSt
             <div className={s.descBlock}>
                 <div className={s.nameStatusBlock}>
                     <div className={s.name}>{profile.fullName}</div>
-                    <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
+                    <ProfileStatusWithHooks isOwner={isOwner} status={status} updateStatus={updateStatus}/>
                 </div>
                 <div className={s.infoBlock}>
                     {editMode ? <ProfileDataForm initialValues={profile} profile={profile} onSubmit={onSubmit}/>
