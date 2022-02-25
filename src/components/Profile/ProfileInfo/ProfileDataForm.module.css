@@ -1,47 +1,53 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 input[type="text"] {
-    font-family: inherit; /* 1 */
-    font-size: inherit; /* 1 */
-    line-height: inherit; /* 1 */
-    margin: 0; /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  margin: 0; /* 2 */
 }
-.inputProfile{
-    padding: 5px;
-    font-size: 20px;
+.inputProfile {
+  padding: 5px;
+  font-size: 20px;
 }
-.inputItem{
-    font-size: 15px;
-    padding: 10px;
+.inputItem {
+  font-size: 15px;
+  padding: 10px;
 }
-.inputItem input[type="text"]{
-    width: 500px;
-    box-shadow: 0 0 1px black;
-    border: 0 solid rgb(24, 29, 30);
+.inputItem input[type="text"] {
+  width: 500px;
+  box-shadow: 0 0 1px black;
+  border: 0 solid rgb(24, 29, 30);
 }
-.profileForm{
-    padding-left: 30px;
+.profileForm {
+  padding-left: 30px;
 }
-.contactTitle{
-    margin-top: 10px;
+.contactTitle {
+  margin-top: 10px;
 }
-.contactTitle:first-letter{
-    text-transform: uppercase;
+.contactTitle:first-letter {
+  text-transform: uppercase;
 }
-.contactsTitle{
-    font-weight: bold;
+.contactsTitle {
+  font-weight: bold;
 }
-.btn{
-    margin:2% 35%;
-    background-color: #4b8ffd;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 8px;
-    border-radius: 10px; /* Радиус скругления */
-    border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
-    box-shadow: 0 0 2px black; /* Параметры тени */
-    cursor: pointer;
+.btn {
+  margin: 2% 35%;
+  background-color: #4b8ffd;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  padding: 8px;
+  border-radius: 10px; /* Радиус скругления */
+  border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
+  box-shadow: 0 0 2px black; /* Параметры тени */
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }

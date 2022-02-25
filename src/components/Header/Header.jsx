@@ -11,7 +11,7 @@ const Header = ({login,isAuth,logout,profile,userId}) => {
          }
          return name
     }
-    debugger
+
     return <header className={s.header}>
         <div className={s.logo}><img src={logo} />
             <span className={s.logoText}>deathly hallows</span></div>

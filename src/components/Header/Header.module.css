@@ -38,17 +38,18 @@
 .loginBlock a {
   color: white;
 }
-.btn{
+.btn {
   background-color: #4b8ffd;
   text-align: center;
   color: white;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 8px;
   border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
   box-shadow: 0 0 2px black; /* Параметры тени */
   cursor: pointer;
 }
 .btn:hover {
-  background: #7abbfa;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }

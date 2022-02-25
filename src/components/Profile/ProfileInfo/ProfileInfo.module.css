@@ -102,11 +102,11 @@ span {
     padding: 8px;
     border-radius: 10px; /* Радиус скругления */
     border: 0 solid rgb(24, 29, 30); /* Параметры рамки */
-    box-shadow: 0 0 2px black; /* Параметры тени */
     cursor: pointer;
+
 }
 .btn:hover {
-    background: #7abbfa;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .editWrapper{
     border-top:1px solid gainsboro;
@@ -150,7 +150,8 @@ span {
 }
 
 .fileUpload:hover {
-    background: #7abbfa;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .fileUpload label {

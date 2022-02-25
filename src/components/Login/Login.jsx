@@ -14,24 +14,25 @@ const LoginForm = ({handleSubmit,error,captchaUrl}) => {
         <div>
             <form className="form" onSubmit={handleSubmit}>
 
+                <h1>Login</h1>
                 <div><Field placeholder={"Login"} name={'email'} component={Input}
                             validate={[required]} type={"email"}/></div>
 
                 <div><Field placeholder={"Password"} component={Input} name={'password'}
                             validate={[required]} type={"password"}/></div>
 
-                <div className="checkbox"><div><Field  component={Input} name={'lookingForAJobs'}
+                <div className="checkbox"><div><Field checked  component={Input} name={'lookingForAJobs'}
                                                        type={"checkbox"}/></div><span>Remember Me</span></div>
 
                 {captchaUrl && <img src={captchaUrl}/>}
-                {captchaUrl && <Field placeholder={"Symbols from image"} component={Input} name={'captcha'}
+                {captchaUrl && <Field  placeholder={"Symbols from image"} component={Input} name={'captcha'}
                                       validate={[required]}  type={"text"}/>}
 
 
                 {error && <div className="formSummaryError">
                     {error}</div>}
                 <div>
-                    <button>Login</button>
+                    <button className="btn">Login</button>
                 </div>
             </form>
         </div>
@@ -49,7 +50,6 @@ const Login = (props) => {
     }
     return (
         <div className="wrapper">
-            <h1>Login</h1>
             <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl}/>
         </div>
     )
