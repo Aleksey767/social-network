@@ -3,7 +3,7 @@ import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
 import logo from '../../../src/assets/images/logo.png'
 let name
-const Header = ({login,isAuth,logout,profile,userId}) => {
+const Header = ({isAuth,logout,profile,userId}) => {
 
     const getUserName = () => {
          if(userId===profile.userId){
@@ -13,8 +13,9 @@ const Header = ({login,isAuth,logout,profile,userId}) => {
     }
 
     return <header className={s.header}>
-        <div className={s.logo}><img src={logo} />
-            <span className={s.logoText}>deathly hallows</span></div>
+        <div className={s.logo}><NavLink to={'/profile'}><img src={logo} /><span className={s.logoText}>deathly hallows</span></NavLink>
+            {/*<div className={s.logoText}>deathly hallows</div>*/}
+        </div>
         <div className={s.loginBlock}>
             { isAuth
 
