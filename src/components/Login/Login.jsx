@@ -15,6 +15,11 @@ const LoginForm = ({handleSubmit,error,captchaUrl}) => {
             <form className="form" onSubmit={handleSubmit}>
 
                 <h1>Login</h1>
+                <div className={s.testAcc}>
+                <div>Test account</div>
+                <div><b>Login:</b>test-social-network@mail.ru</div>
+                <div><b>Password:</b>testk37k2103</div>
+                </div>
                 <div><Field placeholder={"Login"} name={'email'} component={Input}
                             validate={[required]} type={"email"}/></div>
 
